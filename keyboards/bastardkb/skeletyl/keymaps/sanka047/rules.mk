@@ -1,0 +1,5 @@
+CAPS_WORD_ENABLE = yes
+COMBO_ENABLE = yes
+CONSOLE_ENABLE = yes
+
+SRC += tmux.c
