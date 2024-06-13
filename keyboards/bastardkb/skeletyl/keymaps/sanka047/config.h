@@ -10,6 +10,14 @@
 
 #define TAPPING_TOGGLE 2
 #define TAPPING_TERM 200
+// If a mod-tap key is tapped _consecutively_ within this threshold, it will enable auto-repeat
+// (mirroring default hold behavior for regular keys). By default, this is set to TAPPING_TERM.
+//
+// Personally, I always run into typos with this enabled and using home-row mods. Setting it to 0
+// disables this behavior entirely
+//
+// See: https://docs.qmk.fm/tap_hold#quick-tap-term
+#define QUICK_TAP_TERM 0
 
 #define PERMISSIVE_HOLD_PER_KEY
 
