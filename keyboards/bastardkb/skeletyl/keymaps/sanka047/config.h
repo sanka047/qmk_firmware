@@ -4,6 +4,7 @@
 
 /* Flash handedness on EEPROM */
 #undef MASTER_RIGHT
+// See: https://docs.qmk.fm/features/split_keyboard#handedness-by-eeprom
 #define EE_HANDS
 
 #define FORCE_NKRO
@@ -18,7 +19,10 @@
 //
 // See: https://docs.qmk.fm/tap_hold#quick-tap-term
 #define QUICK_TAP_TERM 0
-
+// This is used for special handling of mod-tap thumb keys to prefer the hold action (avoiding
+// further tuning of TAPPING_TERM).
+//
+// See: https://docs.qmk.fm/tap_hold#permissive-hold
 #define PERMISSIVE_HOLD_PER_KEY
 
 #define ONESHOT_TIMEOUT 750
