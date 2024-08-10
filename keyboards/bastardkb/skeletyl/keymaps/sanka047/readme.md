@@ -23,3 +23,4 @@ qmk flash -kb bastardkb/skeletyl/v2/splinky_3 -km sanka047 -bl uf2-split-right
 qmk flash -bl uf2-split-left
 qmk flash -bl uf2-split-right
 ```
+NOTE: The splinky requires the reset button to be tapped **TWICE** (not just once).
